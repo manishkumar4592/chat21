@@ -7,15 +7,15 @@
 
 export const environment = {
   production: true,
-  version: require('../../package.json').version, // https://stackoverflow.com/questions/34907682/how-to-display-app-version-in-angular2
+  version: require('../../package.json').version, // https://stackoverflow.com/questions/349076002/how-to-display-app-version-in-angular2
   remoteConfig: false,
   firebase: {
-    apiKey:"AIzaSyDvQaRqiSt8cJMwJ_TVLomgMbeAaBnjm0I",
-    authDomain: "scoonews.firebaseapp.com",
-    databaseURL: "https://scoonews.firebaseio.com",
-    projectId: "scoonews",
-    storageBucket: "scoonews.appspot.com",
-    messagingSenderId: "382632848826"
+    apiKey:"AIzaSyDvQaRqiSt00cJMwJ_TVLomgMbeAaBnjm0I",
+    authDomain: "news.firebaseapp.com",
+    databaseURL: "https://news.firebaseio.com",
+    projectId: "news",
+    storageBucket: "news.appspot.com",
+    messagingSenderId: "3002632004000026"
   },
   // apiUrl: 'https://api.tiledesk.com/v1/',
   apiUrl: 'https://tiledesk-server-pre.herokuapp.com/',
