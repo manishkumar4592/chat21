@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css?family=Google+Sans:200,400,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons');
+@import '../../sass/normalize.scss';
+@import '../../sass/variables';
+@import url("../../sass/hover.css");
+
+tiledeskwidget-root {
+    position: fixed;
+    z-index: 999999;
+    width: auto;
+    height: auto;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size-adjust: none;
+    font-size: 100%;
+    font-style: normal;
+    letter-spacing: normal;
+    font-stretch: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font: normal normal 100% "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+    -moz-text-align-last: initial;
+    text-align-last: initial;
+    text-decoration: none;
+    -webkit-text-emphasis: none;
+    text-indent: 0;
+    text-justify: auto;
+    text-shadow: none;
+    text-transform: none;
+    -webkit-animation: none 0 ease 0 1 normal;
+    animation: none 0 ease 0 1 normal;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    background: none 0 0 auto repeat scroll padding-box transparent;
+    background-color: transparent;
+    background-image: none;
+    border: 0 none transparent;
+    border-radius: 0;
+    bottom: auto;
+    -webkit-box-decoration-break: slice;
+    box-decoration-break: slice;
+    box-shadow: none;
+    box-sizing: content-box;
+    -webkit-break-after: auto;
+    -moz-break-after: auto;
+    break-after: auto;
+    -webkit-break-before: auto;
+    -moz-break-before: auto;
+    break-before: auto;
+    -webkit-column-break-inside: auto;
+    page-break-inside: auto;
+    break-inside: auto;
+    caption-side: top;
+    clear: none;
+    clip: auto;
+    color: inherit;
+    -webkit-column-count: auto;
+    -moz-column-count: auto;
+    column-count: auto;
+    -webkit-column-fill: balance;
+    -moz-column-fill: balance;
+    column-fill: balance;
+    -webkit-column-gap: normal;
+    -moz-column-gap: normal;
+    column-gap: normal;
+    -webkit-column-rule: medium medium #1f1f1f;
+    -moz-column-rule: medium medium #1f1f1f;
+    column-rule: medium medium #1f1f1f;
+    -webkit-column-span: 1;
+    -moz-column-span: 1;
+    column-span: 1;
+    -webkit-column-width: auto;
+    -moz-column-width: auto;
+    column-width: auto;
+    -webkit-columns: auto auto;
+    -moz-columns: auto auto;
+    columns: auto auto;
+    content: normal;
+    counter-increment: none;
+    counter-reset: none;
+    cursor: auto;
+    direction: ltr;
+    display: inline;
+    empty-cells: show;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+    image-orientation: auto;
+    image-rendering: auto;
+    left: auto;
+    line-height: initial;
+    list-style: disc outside none;
+    margin: 0;
+    max-height: none;
+    max-width: none;
+    min-height: 0;
+    min-width: 0;
+    nav-down: auto;
+    nav-index: auto;
+    nav-left: auto;
+    nav-right: auto;
+    nav-up: auto;
+    opacity: 1;
+    orphans: 2;
+    outline: invert none medium;
+    outline-offset: 0;
+    overflow: visible;
+    padding: 0;
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: auto;
+    -webkit-perspective: none;
+    perspective: none;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    // position: static;
+    quotes: none;
+    resize: none;
+    right: auto;
+    ruby-align: auto;
+    ruby-overhang: none;
+    ruby-position: before;
+    ruby-span: none;
+    size: auto;
+    table-layout: auto;
+    top: auto;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transform-origin: 50% 50% 0;
+    -ms-transform-origin: 50% 50% 0;
+    transform-origin: 50% 50% 0;
+    -webkit-transform-style: flat;
+    transform-style: flat;
+    transition: all 0 ease 0;
+    unicode-bidi: normal;
+    vertical-align: baseline;
+    white-space: normal;
+    widows: 2;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    text-align: start;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // display: none;
+    // background-color: #ffffff;
+
+    // ========= BEGIN: RESET CSS TAG ========= //
+    *:focus {
+        outline: none;
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+    
+
+    p, a, ul, li, h1, h2, h3, textarea, title, time, svg, small, link, label, input, img,
+    form, font, code, button, br, b{
+        // all: unset;
+    }
+    textarea,
+    textarea:visited,
+    textarea:focus,
+    textarea:hover,
+    textarea:active{
+        all: unset;
+        line-height: 15px!important;
+        outline: none!important;
+        box-shadow:none!important;;
+        border: 0px solid $trasp-light-black!important;;
+    }
+
+    // ========= BEGIN: CSS APP.COMPONENT ========= //
+    .c21-button-clean {
+        -webkit-appearance: initial;
+        border: none;
+        background-color: unset;
+    }
+    
+    #chat21-container {
+        display: none;
+        font-family: 'Roboto','Google Sans', Helvetica, Arial, sans-serif;
+        font-size: 10px;
+        text-align: left;
+        background-color: #ffffff;
+        &.active{
+            display: block;
+        }
+
+        // ========= BEGIN: GENERIC CSS ========= //
+        a:link {
+            color: #ffffff;
+        }
+        /* visited link */
+        a:visited {
+            color: #ffffff;
+        }
+        /* mouse over link */
+        a:hover {
+            color: #ffffff;
+        }
+        /* selected link */
+        a:active {
+            color: #ffffff;
+        }
+        div.clear {
+            all: unset;
+            clear: both;
+        }
+        .truncate{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .v-align-center{
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            float: left;
+        }
+        .c21-align-left {
+            left: 20px;
+        }
+        .c21-align-right {
+            right: 20px;
+        }
+        /* TIME */
+        .time {
+            font-size: 1em;
+            color: $gray;
+            text-align: left;
+            margin: 0px;
+            padding: 0px 40px;
+            margin-top: -2px;
+            background-color: transparent;
+        }
+        .time.sender{
+            text-align: right;
+            margin-right: 24px;
+            padding: 0;
+        }
+
+        // === CSS LINKS === //
+        /* .messages.msg_receive a */
+        .msg_receive a { 
+            color: $bck-msg-sent;
+        }
+
+        // === CSS BUTTON === //
+        button.c21-button-primary{
+            width: auto;
+            height: 40px;
+            line-height: 40px;
+            margin: 8px 0;
+            padding: 0 24px;
+            opacity: 1;
+            text-align: center;
+            font-size: 1em;
+            border-radius: 40px;
+            background-color: $blue;
+            color: #ffffff;
+            border: 0px;
+
+            cursor: pointer;
+            .c21-label-button {
+                margin-left: 8px; 
+                font-weight: 400;
+            }
+        }
+        button.c21-button-primary:hover,
+        button.c21-button-primary:focus,
+        button.c21-button-primary:active {
+            //outline-width: 0px;
+            opacity: 0.8;
+        }
+
+        button.c21-button-link {
+            font-weight: 400;
+            font-size: 14px;
+            color: $blue;
+            text-decoration: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        button.c21-button-link:hover,
+        button.c21-button-link:focus,
+        button.c21-button-link:active {
+            text-decoration: underline;
+            outline: none;
+        }
+
+        .c21-divBudge{
+            position: absolute;
+            top: 0;
+            width: auto;
+            height: 12px;
+            min-width: 12px;
+            font-size: 1em;
+            line-height: 1.2em;
+            border-radius: 50%;
+            background-color: $red;
+            color: white;
+            text-align: center;
+            margin-top: -10px;
+            display: inline-block;
+            box-sizing: initial;
+
+            padding: 5px;
+            left: 0px;
+        }
+        .c21-button{
+            display: flex;
+            cursor: pointer;
+        }
+        /** header-buttons **/
+        .c21-close-button {
+            position: absolute;
+            width: 51px;
+            height: 51px;
+            top: 0;
+            right: 0;
+            margin: 12px 8px 12px 2px;
+            z-index: 10;
+            .c21-close-button-body {
+                cursor: pointer;
+                width: 51px;
+                height: 51px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                -webkit-appearance: initial;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.0);
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.4);
+                }
+                svg{
+                    margin: 0 auto;
+                    fill: #ffffff;
+                }
+            }
+        }
+         /* LOADING */
+        /*http://tobiasahlin.com/spinkit/*/
+        #chat21-spinner {
+            display: none;
+            width: 70px;
+            min-height: 20px;
+            margin: 20px auto 0;
+            text-align: center;
+        }
+        #chat21-spinner.active {
+            display: block;
+        }
+        #chat21-spinner > div {
+            width: 12px;
+            height: 12px;
+            background-color: $blue;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+        #chat21-spinner .chat21-bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+        #chat21-spinner .chat21-bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+        #chat21-spinner span {
+            display: block;
+            margin: 0.5em 0 0 0;
+            color: $blue;
+            /* text-transform: uppercase; */
+            font-family: 'Roboto', sans-serif;
+            -webkit-animation: pulse 2000ms linear infinite;
+            -moz-animation: pulse 2000ms linear infinite;
+            animation: pulse 2000ms linear infinite;
+            text-align: center;
+        }
+        @-webkit-keyframes sk-bouncedelay {
+            0%, 80%, 100% { -webkit-transform: scale(0) }
+            40% { -webkit-transform: scale(1.0) }
+        }
+        @keyframes sk-bouncedelay {
+            0%, 80%, 100% { 
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            } 40% { 
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+            }
+        }
+        // ========= END: GENERIC CSS ========= //
+   
+        /* CSS BOX CONTAINER */
+        #chat21-conversations {
+            position: fixed;
+            width: 376px;
+            height: calc(100% - 120px);
+            top: inherit;
+            bottom: 0px;
+            right: 20px;
+            overflow: hidden;
+            background-color: #ffffff;
+            z-index: 1;
+            border-radius: 0px;
+            box-shadow: $trasp-light-black 0 0 38px;
+            display: none;
+            overflow-y: hidden;
+
+            &.full-screen-mode {
+                width: 100%;
+                height: 100%;
+                right: 0px;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                border-radius: 0px;
+                max-height: none;
+            }
+        }
+   
+
+        .chat21-window {
+            display: none;
+        }
+        .chat21-fullscreen {
+            width: 100%;
+            height: 100%;
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            border-radius: 0px;
+            max-height: none;
+        }
+        
+
+        /***************************
+        ******** PAGE MODAL ********
+        ****************************/
+        .modal-page {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background-color: transparent;
+            opacity: 0;
+            transition: all 0.2s;
+            bottom: -100%;
+            &.active {
+                background-color: $trasp-black;
+                opacity: 1;
+                transition: all 0.3s;
+                bottom: 0px;
+            }
+            .c21-modal-content {
+                background-color: #ffffff;
+                border: 0px solid $trasp-light-black;
+                border-radius: 0.3rem;
+                padding: 0px;
+                margin: 20px auto;
+            }
+        }
+    }
+
+
+
+    // ========= BEGIN: CSS STANDARD PAGE ========= //
+    .c21-header {
+        overflow: hidden;
+        width: 100%;
+        height: 52px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+
+        .c21-header-container{
+            position: relative;
+            height: 52px;
+            width: 100%;
+            margin: 0 auto;
+
+            .c21-header-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                .c21-header-button{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 10px 0 10px;
+                    cursor: pointer;
+                    &.c21-right{
+                        float: right;
+                    }
+                    &.c21-left{
+                        float: left;
+                    }
+                    &.c21-close{
+                        display: none;
+                    }
+                }
+
+                .c21-title {
+                    position: absolute;
+                    left: 0;
+                    display: inline-block;
+                    width: calc(100% - 190px);
+                    height: 1.6em;
+                    line-height: 1.6em;
+                    padding: 0px;
+                    margin: 10px 75px;
+                    text-align: center;
+                    font-size: 1.6em;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;             
+                }
+            }
+        }
+    }
+
+    // =================== C21-BODY ===============//
+    .c21-body::-webkit-scrollbar {
+        display: none;
+    }
+    .c21-body {
+        position: absolute;
+        top: 53px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0px;
+        margin: 0px auto;
+        overflow: scroll;
+        
+        .c21-body-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            width: auto;
+
+            .c21-body-header {
+                position: absolute;
+                top: 0;
+                left: 30px;
+                right: 30px;
+                padding: 10px 0px;
+                margin: 0px auto;
+                width: auto;
+                height: auto;
+                z-index: 2;
+            }
+
+            .c21-body-content  {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 0;
+                margin: 0px auto;
+                height: auto;
+            }
+
+        }
+        
+        
+
+        //     .c21-message-field {
+        //         padding: 0;
+        //         margin: 0;
+        //         line-height: 1.2em;
+        //         color: #616161;
+        //         font-size: 1.5em;
+        //         text-align: center;
+        //         word-wrap: break-word;
+        //     }
+        // }
+       
+    }
+    // ========= END: CSS STANDARD PAGE ========= //
+
+
+    /**************
+    // nk: .chat21-sheet CUSTOM DIMENSIONS WHEN THE WINDOW WIDTH IS < 451PX 
+    ***************/
+
+    @media (max-width: 451px) {
+        #chat21-container {
+            .header-button.close{
+                display: flex;
+            }
+            #chat21-conversations {
+                width: 100%;
+                height: 100%;
+                right: 0px;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                border-radius: 0px;
+                max-height: none;
+            }
+        }
+    }
+
+}
