@@ -9,14 +9,14 @@ export const environment = {
   version: require('../../package.json').version, // https://stackoverflow.com/questions/34907682/how-to-display-app-version-in-angular2
   remoteConfig: true,
   firebase: {
-    apiKey:"AIzaSyDvQaRqiSt8cJMwJ_TVLomgMbeAaBnjm0I",
-    authDomain: "scoonews.firebaseapp.com",
-    databaseURL: "https://scoonews.firebaseio.com",
-    projectId: "scoonews",
-    storageBucket: "scoonews.appspot.com",
-    messagingSenderId: "382632848826"
+    apiKey:"AIzaSyDvQaRqiSt00cJMwJ_TVLomgMbeAaBnjm0I",
+    authDomain: "news.firebaseapp.com",
+    databaseURL: "https://news.firebaseio.com",
+    projectId: "news",
+    storageBucket: "news.appspot.com",
+    messagingSenderId: "3002632004000026"
   },
   apiUrl: 'https://us-central1-fir-analyticsdemo-ab6d6.cloudfunctions.net/api/',
-  tenant: 'edbankchat',
+  tenant: 'bankchat',
   defaultLang : 'en'
 };
