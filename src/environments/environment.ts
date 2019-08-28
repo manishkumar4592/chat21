@@ -6,7 +6,7 @@
 
 export const environment = {
   production: false,
-  version: require('../../package.json').version, // https://stackoverflow.com/questions/34907682/how-to-display-app-version-in-angular2
+  version: require('../../package.json').version, // https://stackoverflow.com/questions/349076002/how-to-display-app-version-in-angular2
   remoteConfig: true,
   firebase: {
     apiKey:"AIzaSyDvQaRqiSt00cJMwJ_TVLomgMbeAaBnjm0I",
